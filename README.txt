@@ -1,12 +1,13 @@
-デブ活研究所 PWA v2（スワン3段階・バニラ＆ピーチ・ぷっくりボタン）
+pakumogu v3
 
-GitHub Pagesに配置するファイル：index.html / manifest.webmanifest / icon.svg / sw.js / swan-slim.webp / swan-normal.webp / swan-plump.webp
-既存のリポジトリの場合は全ファイルを同じ階層にアップロードして上書きしてください。
-Settings → Pages → Deploy from a branch → main / (root) で公開。
-iPhoneはSafariの共有→ホーム画面に追加。
+GitHubのpakumoguリポジトリのルートへ、ZIP内のファイルをすべてアップロードし、同名ファイルは上書きしてください。
+既存の記録はブラウザのlocalStorageに保持され、データキーは変更していません。
 
-食事を記録すると、当日のカロリー/目標比でスワンが3段階に変化します。
-0〜35%未満:スリム、35〜78%未満:普通、78%以上:まんまる。
-目標超過でもスワンはそれ以上太りません。
-データは端末内(localStorage)保存。以前のv1と同じ保存キーを使うので、同一URLなら引き継げます。定期的にバックアップしてください。
-画像は3枚に分けた表示素材です。正式な透明背景・単体キャラクター画像への差し替えも可能です。
+更新点:
+- ぷっくりロゴをヘッダーに追加
+- スワン3羽を透明背景の新画像へ差し替え
+- M PLUS Rounded 1cを全体に適用（Google Fontsを読み込めない環境では代替フォント）
+- iPhoneの日付入力欄のはみ出し対策
+- PWAキャッシュ名をv3に更新
+
+注意: 初回更新時はSafariで再読み込みしてください。
